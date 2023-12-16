@@ -4,13 +4,8 @@ pipeline {
    environment {
        DOCKER_HUB_REPO = "omar9289/flask-hello-world"
        CONTAINER_NAME = "flask-hello-world"
- 
    }
-  
-   stages {
-       /* We do not need a stage for checkout here since it is done by default when using the "Pipeline script from SCM" option. */
-      
- 
+     stages {
        stage('Build') {
            steps {
                echo 'Building..'
